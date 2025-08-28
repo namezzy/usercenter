@@ -549,6 +549,18 @@ MIT License
 
 **Note**: This is a complete user center system implementation that includes various core features of modern web applications. The system uses a frontend-backend separation architecture, supports Docker deployment, and has good scalability and maintainability.
 
+## 🙏 Contributors
+
+Thanks to all contributors who have helped make this project better!
+
+<a href="https://github.com/namezzy/usercenter/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=namezzy/usercenter" />
+</a>
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=namezzy/usercenter&type=Date)](https://star-history.com/#namezzy/usercenter&Date)
+
 ## Language / 语言
 
 - [English](README.md) - Current
