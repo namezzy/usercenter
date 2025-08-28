@@ -1,0 +1,434 @@
+.admin-roles-container {
+  padding: 24px;
+  background: #f5f5f5;
+  min-height: calc(100vh - 64px);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-header h3 {
+  margin: 0;
+  color: #262626;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 角色信息展示 */
+.role-name {
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 4px;
+}
+
+.role-description {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+/* 权限分配模态框 */
+.permission-assignment {
+  padding: 16px 0;
+}
+
+.permission-tree-container {
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 16px;
+  background: #fafafa;
+}
+
+.permission-list-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.permission-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.permission-item:last-child {
+  border-bottom: none;
+}
+
+.permission-info {
+  margin-left: 8px;
+}
+
+.permission-name {
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 4px;
+}
+
+.permission-description {
+  color: #8c8c8c;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.permission-meta {
+  display: flex;
+  gap: 4px;
+}
+
+/* 表格样式 */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+/* 操作按钮样式 */
+.ant-btn-text {
+  padding: 4px 8px;
+  height: auto;
+}
+
+.ant-btn-text:hover {
+  background: #f5f5f5;
+}
+
+/* 标签样式 */
+.ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  margin: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 树组件样式 */
+.ant-tree {
+  background: transparent;
+}
+
+.ant-tree .ant-tree-treenode {
+  padding: 4px 0;
+}
+
+.ant-tree .ant-tree-node-content-wrapper:hover {
+  background: #e6f7ff;
+}
+
+.ant-tree .ant-tree-node-selected {
+  background: #bae7ff !important;
+}
+
+/* 复选框样式 */
+.ant-checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* 权限项样式 */
+.permission-item .ant-checkbox-wrapper {
+  width: 100%;
+}
+
+.permission-item:hover {
+  background: #f9f9f9;
+  border-radius: 4px;
+  padding: 12px 8px;
+  margin: 0 -8px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .admin-roles-container {
+    padding: 16px;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .page-header h3 {
+    font-size: 18px;
+  }
+  
+  .permission-list-container {
+    max-height: 300px;
+  }
+  
+  .ant-modal {
+    margin: 0;
+    width: 100% !important;
+    max-width: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-header h3 {
+    font-size: 16px;
+  }
+  
+  .role-name {
+    font-size: 14px;
+  }
+  
+  .role-description {
+    font-size: 11px;
+  }
+  
+  .permission-name {
+    font-size: 14px;
+  }
+  
+  .permission-description {
+    font-size: 11px;
+  }
+}
+
+/* 暗色主题适配 */
+[data-theme='dark'] .admin-roles-container {
+  background: #000;
+}
+
+[data-theme='dark'] .page-header h3 {
+  color: #fff;
+}
+
+[data-theme='dark'] .role-name {
+  color: #fff;
+}
+
+[data-theme='dark'] .role-description {
+  color: #8c8c8c;
+}
+
+[data-theme='dark'] .permission-name {
+  color: #fff;
+}
+
+[data-theme='dark'] .permission-description {
+  color: #8c8c8c;
+}
+
+[data-theme='dark'] .ant-table-wrapper {
+  background: #141414;
+}
+
+[data-theme='dark'] .ant-table-thead > tr > th {
+  background: #262626;
+  color: #fff;
+}
+
+[data-theme='dark'] .ant-table-tbody > tr:hover > td {
+  background: #262626;
+}
+
+[data-theme='dark'] .permission-tree-container,
+[data-theme='dark'] .permission-list-container {
+  background: #262626;
+  border-color: #434343;
+}
+
+[data-theme='dark'] .permission-item {
+  border-bottom-color: #434343;
+}
+
+[data-theme='dark'] .permission-item:hover {
+  background: #303030;
+}
+
+[data-theme='dark'] .ant-tree .ant-tree-node-content-wrapper:hover {
+  background: #303030;
+}
+
+[data-theme='dark'] .ant-tree .ant-tree-node-selected {
+  background: #1f4768 !important;
+}
+
+/* 模态框样式 */
+.ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+[data-theme='dark'] .ant-modal-header {
+  border-bottom-color: #434343;
+}
+
+/* 表单样式 */
+.ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-input.ant-input {
+  border-radius: 6px;
+}
+
+.ant-input:focus,
+.ant-input-focused,
+.ant-select-focused .ant-select-selector {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* 标签页样式 */
+.ant-tabs-content-holder {
+  padding-top: 16px;
+}
+
+.ant-tabs-tab {
+  padding: 8px 16px;
+}
+
+/* 加载状态 */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+/* 空状态 */
+.empty-container {
+  text-align: center;
+  padding: 48px 0;
+  color: #8c8c8c;
+}
+
+.empty-container .anticon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+/* 权限计数器 */
+.permission-counter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 6px;
+}
+
+[data-theme='dark'] .permission-counter {
+  background: #111b26;
+  border-color: #2f4554;
+}
+
+/* 操作确认样式 */
+.ant-popconfirm-message {
+  margin-bottom: 8px;
+}
+
+.ant-popconfirm-buttons {
+  text-align: right;
+}
+
+/* 图标样式 */
+.anticon {
+  vertical-align: middle;
+}
+
+/* 权限树展开/收起按钮 */
+.tree-actions {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+/* 分割线样式 */
+.ant-divider {
+  margin: 16px 0;
+}
+
+/* 按钮组样式 */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* 搜索框样式 */
+.search-input {
+  margin-bottom: 16px;
+}
+
+/* 统计信息样式 */
+.stats-card {
+  background: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+[data-theme='dark'] .stats-card {
+  background: #262626;
+  border-color: #434343;
+}
+
+.stats-item {
+  text-align: center;
+  padding: 8px;
+}
+
+.stats-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1890ff;
+  display: block;
+}
+
+.stats-label {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+/* 权限分组样式 */
+.permission-group {
+  margin-bottom: 16px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.permission-group-header {
+  background: #fafafa;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e8e8e8;
+  font-weight: 500;
+}
+
+.permission-group-content {
+  padding: 8px 16px;
+}
+
+[data-theme='dark'] .permission-group {
+  border-color: #434343;
+}
+
+[data-theme='dark'] .permission-group-header {
+  background: #262626;
+  border-bottom-color: #434343;
+  color: #fff;
+}

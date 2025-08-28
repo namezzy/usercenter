@@ -1,0 +1,178 @@
+.register-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.register-content {
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-card {
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: none;
+  overflow: hidden;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.register-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1890ff;
+  margin-bottom: 8px;
+}
+
+.register-header p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.register-footer p {
+  margin: 0;
+  color: #666;
+}
+
+.register-footer a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 12px;
+  }
+  
+  .register-card {
+    margin: 0;
+  }
+  
+  .register-header h1 {
+    font-size: 24px;
+  }
+}
+
+/* 暗色主题适配 */
+[data-theme='dark'] .register-container {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+[data-theme='dark'] .register-card {
+  background: #141414;
+}
+
+[data-theme='dark'] .register-header h1 {
+  color: #1890ff;
+}
+
+[data-theme='dark'] .register-header p,
+[data-theme='dark'] .register-footer p {
+  color: #999;
+}
+
+/* 密码强度指示器 */
+.password-strength {
+  margin-top: 4px;
+  display: flex;
+  gap: 4px;
+}
+
+.password-strength-item {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: #f0f0f0;
+  transition: background-color 0.3s;
+}
+
+.password-strength-item.weak {
+  background: #ff4d4f;
+}
+
+.password-strength-item.medium {
+  background: #faad14;
+}
+
+.password-strength-item.strong {
+  background: #52c41a;
+}
+
+.password-strength-text {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+/* 第三方登录按钮 */
+.third-party-login {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.third-party-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.third-party-btn:hover {
+  border-color: #1890ff;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.2);
+}
+
+.third-party-btn svg {
+  font-size: 18px;
+}
+
+/* 验证码输入框样式 */
+.verification-input {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.verification-input .ant-input {
+  flex: 1;
+}
+
+.verification-input .ant-btn {
+  flex-shrink: 0;
+  min-width: 100px;
+}
+
+/* 协议链接样式 */
+.agreement-links a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.agreement-links a:hover {
+  text-decoration: underline;
+}

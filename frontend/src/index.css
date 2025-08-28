@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 全局样式 */
+.ant-layout {
+  background: transparent !important;
+}
+
+.ant-menu {
+  border-right: none !important;
+}
+
+/* 响应式表格 */
+.ant-table-wrapper {
+  overflow-x: auto;
+}
+
+/* 卡片阴影 */
+.ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* 按钮阴影 */
+.ant-btn-primary {
+  box-shadow: 0 2px 4px rgba(24, 144, 255, 0.2);
+}
+
+/* 表单间距 */
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+/* 头像上传 */
+.avatar-upload {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-upload .ant-upload {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-upload .ant-upload-select {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-upload .upload-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  border: 1px dashed #d9d9d9;
+  border-radius: 50%;
+  color: #666;
+  transition: all 0.3s;
+}
+
+.avatar-upload .upload-button:hover {
+  border-color: #1890ff;
+  color: #1890ff;
+}
+
+/* 加载状态 */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+/* 空状态 */
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: #999;
+}
+
+/* 统计卡片 */
+.stat-card {
+  text-align: center;
+  padding: 24px;
+}
+
+.stat-card .stat-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1890ff;
+  margin-bottom: 8px;
+}
+
+.stat-card .stat-label {
+  font-size: 14px;
+  color: #666;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .ant-table-wrapper {
+    font-size: 12px;
+  }
+  
+  .ant-form-item-label {
+    padding: 0 0 4px;
+  }
+  
+  .ant-card {
+    margin: 8px;
+  }
+  
+  .stat-card .stat-number {
+    font-size: 24px;
+  }
+}
+
+/* 暗色主题适配 */
+[data-theme='dark'] {
+  .ant-card {
+    background: #141414;
+    border-color: #303030;
+  }
+  
+  .upload-button {
+    background: #262626;
+    border-color: #434343;
+    color: #999;
+  }
+  
+  .upload-button:hover {
+    border-color: #1890ff;
+    color: #1890ff;
+  }
+}
+
+/* 动画效果 */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* 工具类 */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
