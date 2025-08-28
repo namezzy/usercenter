@@ -517,8 +517,8 @@ MIT License
 
 ## 联系方式
 
-- 项目地址: [https://github.com/your-username](https://github.com/namezzy)/usercenter
-- 问题反馈: [https://github.com/your-username](https://github.com/namezzy)/usercenter/issues
+- 项目地址: [https://github.com/namezzy](https://github.com/namezzy)/usercenter
+- 问题反馈: [https://github.com/namezzy](https://github.com/namezzy)/usercenter/issues
 - 邮箱: xmj@xx-xmj.com
 
 ---
