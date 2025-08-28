@@ -1,6 +1,30 @@
 # User Center System
 
-A comprehensive user center system with user registration/login, RBAC permission management, personal center, admin dashboard and more features.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?logo=go)](https://golang.org/)
+[![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6?logo=typescript)](https://www.typescriptlang.org/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)](https://www.docker.com/)
+
+A comprehensive full-stack user center system with user registration/login, RBAC permission management, personal center, admin dashboard and enterprise-grade security features.
+
+## 🌍 Documentation
+
+- **[English](README.md)** (Current)
+- **[中文文档](README_CN.md)** 
+- **[Quick Start Guide](QUICK_START.md)**
+- **[Project Status](PROJECT_STATUS.md)**
+
+## 🚀 Quick Start
+
+```bash
+# One-command start with Docker
+git clone https://github.com/namezzy/usercenter.git
+cd usercenter && ./start.sh
+
+# Access: Frontend (http://localhost:3000) | Backend (http://localhost:8080)
+# Login: admin/admin123456 or user/user123456
+```
 
 ## Project Structure
 
